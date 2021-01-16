@@ -1,6 +1,7 @@
 html {
     color: #e8e6e3;
-    background-color: #181a1b;
+    height: 100vh;
+    background-image: linear-gradient(rgb(78, 0, 0), black);
 }
 
 .book-list {
@@ -13,4 +14,7 @@ html {
     background-color:darkslategray;
     border: 1px solid black;
     color: red;
+    padding: 100px;
+    margin: 10px;
+    display: flex;
 }
