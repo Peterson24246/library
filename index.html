@@ -9,6 +9,24 @@
 
 </head>
 <body>
+    <header>
+        <h1>Welcome to the Library!</h1>
+        <button class="add-button">+</button>
+    </header>
+    <div class="book-form">
+        <label for="title">Title</label>
+        <input type="text" name="title" id='title'>
+        <label for="author">Author</label>
+        <input type="text" name="author" id='author'>
+        <label for="pages">Number of Pages</label>
+        <input type="text" id='pages'>
+        <div class="checkbox">
+            <label for="read">Read?</label>
+            <input type="checkbox" name="read" id="read">
+        </div>
+        
+        <button class="submit-button">Add Book</button>
+    </div>
     <div class="book-list"></div>
 
     <script src="index.js"></script>
