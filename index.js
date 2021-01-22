@@ -1,3 +1,12 @@
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title,
+        this.author = author,
+        this.pages = pages,
+        this.read = read
+    }
+}
+
 let myLibrary = [
     new Book('Test1', 'Author1', 123, false),
     new Book('Test2', 'Author2', 456, false),
@@ -10,12 +19,6 @@ addButton.addEventListener('click', showBookForm)
 let submitButton = document.querySelector('.submit-button')
 submitButton.addEventListener('click', addBook)
 
-function Book(title, author, pages, read) {
-    this.title = title,
-    this.author = author,
-    this.pages = pages,
-    this.read = read
-};
 
 Book.prototype.info = function() {
     return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read ? 'read' : 'not read yet'}`
