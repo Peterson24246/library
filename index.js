@@ -19,7 +19,6 @@ addButton.addEventListener('click', showBookForm)
 let submitButton = document.querySelector('.submit-button')
 submitButton.addEventListener('click', addBook)
 
-
 Book.prototype.info = function() {
     return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read ? 'read' : 'not read yet'}`
 }
